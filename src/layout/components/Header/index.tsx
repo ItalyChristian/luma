@@ -1,3 +1,4 @@
+import { LinkButton } from "@/shared/components/LinkButton";
 import Link from "next/link";
 import Navbar from "./Navbar";
 
@@ -22,12 +23,8 @@ export default function Header() {
           >
             Log in
           </Link>
-          <Link
-            href="#courses"
-            className="rounded-lg bg-primary px-4.5 py-2.75 font-semibold text-white transition-colors hover:bg-primary-hover"
-          >
-            Start learning
-          </Link>
+
+          <LinkButton href="#courses">Start learning</LinkButton>
         </div>
       </div>
     </header>

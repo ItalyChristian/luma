@@ -1,4 +1,4 @@
-import Header from "@/components/Header";
+import Header from "@/layout/components/Header";
 
 interface HomeShellProps {
   children: React.ReactNode;

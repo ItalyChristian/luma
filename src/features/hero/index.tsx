@@ -1,5 +1,5 @@
-import Image from "next/image";
 import { LinkButton } from "@/shared/components/LinkButton";
+import Image from "next/image";
 
 export default function Hero() {
   return (
@@ -16,14 +16,13 @@ export default function Hero() {
           design, technology, business and more — one focused lesson at a time.
         </p>
         <div className="mt-7 flex w-full flex-col gap-3 sm:flex-row md:w-auto">
-          <LinkButton
-            href="#courses"
-          >
+          <LinkButton href="#courses" size="large">
             Explore courses
           </LinkButton>
           <LinkButton
             href="#about"
             variant="outline"
+            size="large"
             className="hidden sm:flex"
           >
             See how it works
