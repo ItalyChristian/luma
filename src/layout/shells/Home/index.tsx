@@ -6,7 +6,7 @@ interface HomeShellProps {
 
 export default function HomeShell({ children }: HomeShellProps) {
   return (
-    <div className="min-h-screen bg-[#faf9f5] font-sans text-[#191d2d]">
+    <div className="min-h-screen bg-background font-sans text-foreground">
       <Header />
       <main
         id="courses"

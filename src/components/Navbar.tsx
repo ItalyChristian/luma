@@ -19,12 +19,15 @@ export default function Navbar() {
 
   return (
     <>
-      <nav aria-label="Main navigation" className="hidden items-center gap-7 md:flex">
+      <nav
+        aria-label="Main navigation"
+        className="hidden items-center gap-7 md:flex"
+      >
         {links.map((link) => (
           <Link
             key={link.label}
             href={link.href}
-            className="text-[13px] text-[#686a73] transition-colors hover:text-[#191d2d]"
+            className="text-[13px] text-secondary transition-colors hover:text-foreground"
           >
             {link.label}
           </Link>
@@ -37,7 +40,7 @@ export default function Navbar() {
         aria-expanded={menuOpen}
         aria-controls="mobile-navigation"
         onClick={() => setMenuOpen((isOpen) => !isOpen)}
-        className="relative z-30 flex h-10 w-10 items-center justify-center text-[#191d2d] md:hidden"
+        className="relative z-30 flex h-10 w-10 items-center justify-center text-foreground md:hidden"
       >
         {menuOpen ? (
           <svg aria-hidden="true" viewBox="0 0 24 24" className="h-5 w-5">
@@ -66,7 +69,7 @@ export default function Navbar() {
         <nav
           id="mobile-navigation"
           aria-label="Mobile navigation"
-          className="fixed inset-0 z-20 flex flex-col items-center justify-center gap-7 bg-[#faf9f5] text-[#191d2d] md:hidden"
+          className="fixed inset-0 z-20 flex flex-col items-center justify-center gap-7 bg-background text-foreground md:hidden"
         >
           {links.map((link) => (
             <Link
@@ -81,14 +84,14 @@ export default function Navbar() {
           <Link
             href="#login"
             onClick={closeMenu}
-            className="pt-2 text-[#686a73]"
+            className="pt-2 text-secondary"
           >
             Log in
           </Link>
           <Link
             href="#courses"
             onClick={closeMenu}
-            className="rounded-lg bg-[#3458f5] px-8 py-3 font-semibold text-white"
+            className="rounded-lg bg-primary px-8 py-3 font-semibold text-white"
           >
             Start learning
           </Link>
