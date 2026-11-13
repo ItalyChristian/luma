@@ -1,3 +1,3 @@
 export default function Courses() {
-  return <>SECTION</>;
+  return <div id="courses">SECTION</div>;
 }
