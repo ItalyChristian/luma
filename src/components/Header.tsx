@@ -4,7 +4,7 @@ import Navbar from "./Navbar";
 export default function Header() {
   return (
     <header className="relative z-10 border-b border-border bg-background">
-      <div className="mx-auto flex h-[60px] w-full max-w-[1010px] items-center justify-between px-4 md:px-0">
+      <div className="mx-auto flex h-15 w-full max-w-252.5 items-center justify-between px-4 md:px-0">
         <Link
           href="/"
           aria-label="Luma home"
@@ -24,7 +24,7 @@ export default function Header() {
           </Link>
           <Link
             href="#courses"
-            className="rounded-lg bg-primary px-[18px] py-[11px] font-semibold text-white transition-colors hover:bg-primary-hover"
+            className="rounded-lg bg-primary px-4.5 py-2.75 font-semibold text-white transition-colors hover:bg-primary-hover"
           >
             Start learning
           </Link>
