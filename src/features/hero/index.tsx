@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
+import { LinkButton } from "@/shared/components/LinkButton";
 
 export default function Hero() {
   return (
@@ -16,18 +16,18 @@ export default function Hero() {
           design, technology, business and more — one focused lesson at a time.
         </p>
         <div className="mt-7 flex w-full flex-col gap-3 sm:flex-row md:w-auto">
-          <Link
+          <LinkButton
             href="#courses"
-            className="flex h-12 items-center justify-center rounded-lg bg-primary px-6 text-[13px] font-semibold text-white transition-colors hover:bg-primary-hover"
           >
             Explore courses
-          </Link>
-          <Link
+          </LinkButton>
+          <LinkButton
             href="#about"
-            className="hidden h-12 items-center justify-center rounded-lg border border-border-soft bg-surface px-6 text-[13px] font-semibold text-foreground transition-colors hover:bg-surface-hover sm:flex"
+            variant="outline"
+            className="hidden sm:flex"
           >
             See how it works
-          </Link>
+          </LinkButton>
         </div>
         <div className="mt-7 hidden items-center gap-3 text-[12px] md:flex">
           <div className="flex -space-x-2">
