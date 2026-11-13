@@ -2,20 +2,14 @@
 
 import Link from "next/link";
 import { useState } from "react";
-
-const links = [
-  { label: "Courses", href: "#courses" },
-  { label: "For Teams", href: "#teams" },
-  { label: "Community", href: "#community" },
-  { label: "About", href: "#about" },
-];
+import { LinkProps, navlinks } from "./nav-links.types";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  function closeMenu() {
+  const closeMenu = () => {
     setMenuOpen(false);
-  }
+  };
 
   return (
     <>
@@ -23,7 +17,7 @@ export default function Navbar() {
         aria-label="Main navigation"
         className="hidden items-center gap-7 md:flex"
       >
-        {links.map((link) => (
+        {navlinks.map((link: LinkProps) => (
           <Link
             key={link.label}
             href={link.href}
@@ -71,7 +65,7 @@ export default function Navbar() {
           aria-label="Mobile navigation"
           className="fixed inset-0 z-20 flex flex-col items-center justify-center gap-7 bg-background text-foreground md:hidden"
         >
-          {links.map((link) => (
+          {navlinks.map((link: LinkProps) => (
             <Link
               key={link.label}
               href={link.href}
