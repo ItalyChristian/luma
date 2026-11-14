@@ -1,14 +1,31 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useState, type MouseEvent } from "react";
 import { LinkProps, navlinks } from "./nav-links.data";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const closeMenu = () => {
+  const handleNavigation = (
+    event: MouseEvent<HTMLAnchorElement>,
+    href: string,
+  ) => {
     setMenuOpen(false);
+
+    if (!href.startsWith("#")) {
+      return;
+    }
+
+    const section = document.getElementById(href.slice(1));
+
+    if (!section) {
+      return;
+    }
+
+    event.preventDefault();
+    section.scrollIntoView({ behavior: "smooth", block: "start" });
+    window.history.pushState(null, "", href);
   };
 
   return (
@@ -21,6 +38,7 @@ export default function Navbar() {
           <Link
             key={link.label}
             href={link.href}
+            onClick={(event) => handleNavigation(event, link.href)}
             className="text-[13px] text-secondary transition-colors hover:text-foreground"
           >
             {link.label}
@@ -69,7 +87,7 @@ export default function Navbar() {
             <Link
               key={link.label}
               href={link.href}
-              onClick={closeMenu}
+              onClick={(event) => handleNavigation(event, link.href)}
               className="text-xl font-semibold"
             >
               {link.label}
@@ -77,14 +95,14 @@ export default function Navbar() {
           ))}
           <Link
             href="#login"
-            onClick={closeMenu}
+            onClick={(event) => handleNavigation(event, "#login")}
             className="pt-2 text-secondary"
           >
             Log in
           </Link>
           <Link
             href="#courses"
-            onClick={closeMenu}
+            onClick={(event) => handleNavigation(event, "#courses")}
             className="rounded-lg bg-primary px-8 py-3 font-semibold text-white"
           >
             Start learning
