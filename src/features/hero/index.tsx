@@ -4,7 +4,7 @@ import StudentsCount from "./StudentsCount";
 
 export default function Hero() {
   return (
-    <>
+    <div className="flex w-full flex-col gap-8 py-12 md:min-h-[calc(100vh-60px)] md:flex-row md:items-center md:gap-10 md:py-16">
       <section className="order-2 flex flex-col items-start md:order-1 md:w-[52%]">
         <p className="mb-4 text-[11px] font-semibold tracking-[1.4px] text-primary">
           LEARN AT YOUR OWN PACE
@@ -34,6 +34,6 @@ export default function Hero() {
       </section>
 
       <ImageSection />
-    </>
+    </div>
   );
 }
