@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { LinkProps, navlinks } from "./nav-links.types";
+import { LinkProps, navlinks } from "./nav-links.data";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);

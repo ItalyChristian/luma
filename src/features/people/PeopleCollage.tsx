@@ -5,7 +5,7 @@ export default function PeopleCollage() {
   return (
     <div
       role="img"
-      aria-label="A collage of international people studying and learning together"
+      aria-label="A collage of people studying and learning together"
       className="relative mx-auto aspect-[1.06] w-full max-w-120"
     >
       <div

@@ -1,4 +1,9 @@
-export const pictures = [
+export interface PictureProps {
+  src: string;
+  position: string;
+}
+
+export const pictures: PictureProps[] = [
   {
     src: "photo-1434030216411-0b793f4b4173",
     position: "col-start-1 row-start-2 row-span-2",

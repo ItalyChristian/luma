@@ -4,7 +4,7 @@ import PeopleCollage from "./PeopleCollage";
 export default function People() {
   return (
     <section
-      id="teachers-and-students"
+      id="people"
       aria-labelledby="teachers-and-students-title"
       className="grid w-full items-center gap-8 py-12 md:min-h-162.5 md:grid-cols-[1.05fr_0.95fr] md:gap-10 md:py-16"
     >
@@ -25,8 +25,9 @@ export default function People() {
           facilisi nec magna hendrerit. Placerat ipsum sit tellus urna, faucibus
           aenean lorem faucibus integer.
         </p>
+
         <LinkButton
-          href="#teachers-and-students"
+          href="#people"
           variant="outline"
           size="large"
           className="mt-7 w-fit min-w-57.5 max-w-full text-[12px]"
