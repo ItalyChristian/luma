@@ -1,4 +1,5 @@
 import Header from "@/layout/components/Header";
+import Footer from "@/layout/components/Footer";
 
 interface HomeShellProps {
   children: React.ReactNode;
@@ -6,7 +7,7 @@ interface HomeShellProps {
 
 export default function HomeShell({ children }: HomeShellProps) {
   return (
-    <div className="min-h-screen bg-background font-sans text-foreground">
+    <div className="flex min-h-screen flex-col bg-background font-sans text-foreground">
       <Header />
       <main
         id="courses"
@@ -14,6 +15,7 @@ export default function HomeShell({ children }: HomeShellProps) {
       >
         {children}
       </main>
+      <Footer />
     </div>
   );
 }
