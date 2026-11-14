@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function ImageSection() {
   return (
-    <div className="relative order-1 mx-auto w-full max-w-110 md:order-2 md:w-[44%] md:max-w-none">
+    <div className="relative w-full">
       <div className="absolute -right-3 top-5 h-[94%] w-[96%] rounded-[20px] bg-accent-peach" />
       <div className="absolute -bottom-2 -left-7 h-24 w-24 rounded-full bg-accent-lavender" />
       <div className="relative aspect-[0.96] overflow-hidden rounded-[20px] bg-image-placeholder">

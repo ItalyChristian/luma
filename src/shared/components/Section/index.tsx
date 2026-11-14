@@ -1,9 +1,13 @@
 import SectionDescription from "./SectionDescription";
-import SectionShell from "./SectionShell";
+import IllustrativeShell from "./IllustrativeShell";
+import MainSectionShell from "./MainSectionShell";
 import SectionSubheading from "./SectionSubheading";
+import TextShell from "./TextShell";
 
 export const Section = {
   Description: SectionDescription,
   Subheading: SectionSubheading,
-  Shell: SectionShell,
+  MainShell: MainSectionShell,
+  TextShell,
+  IllustrativeShell,
 };
