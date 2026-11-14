@@ -1,4 +1,4 @@
-export const GeometricForeground = () => {
+export default function GeometricForegrount() {
   return (
     <div aria-hidden="true" className="pointer-events-none absolute inset-0">
       <span className="absolute -left-7 top-[48%] h-12 w-12 rotate-12 rounded-md bg-accent-peach md:left-[2%] md:top-[52%]" />
@@ -12,4 +12,4 @@ export const GeometricForeground = () => {
       <span className="absolute bottom-[8%] left-[25%] hidden h-10 w-7 rotate-12 rounded-lg bg-accent-peach md:block" />
     </div>
   );
-};
+}

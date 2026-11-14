@@ -1,6 +1,6 @@
 import { LinkButton } from "@/shared/components/LinkButton";
 import Image from "next/image";
-import { GeometricForeground } from "./GeometricForeground";
+import GeometricForeground from "./GeometricForeground";
 import { communityFaces } from "./icons.data";
 
 export default function GetStarted() {

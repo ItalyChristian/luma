@@ -1,10 +1,10 @@
 import { LinkButton } from "@/shared/components/LinkButton";
 import PeopleCollage from "./PeopleCollage";
 
-export default function People() {
+export default function Community() {
   return (
     <section
-      id="people"
+      id="community"
       aria-labelledby="teachers-and-students-title"
       className="grid w-full items-center gap-8 py-12 md:min-h-162.5 md:grid-cols-[1.05fr_0.95fr] md:gap-10 md:py-16"
     >
