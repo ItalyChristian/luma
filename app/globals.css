@@ -1,0 +1,32 @@
+@import "tailwindcss";
+@import "../src/shared/styles/colors.css";
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-muted: var(--muted);
+  --color-secondary: var(--secondary);
+  --color-border: var(--border);
+  --color-border-soft: var(--border-soft);
+  --color-surface: var(--surface);
+  --color-surface-hover: var(--surface-hover);
+  --color-avatar-peach: var(--avatar-peach);
+  --color-avatar-blue: var(--avatar-blue);
+  --color-avatar-charcoal: var(--avatar-charcoal);
+  --color-accent-peach: var(--accent-peach);
+  --color-accent-yellow: var(--accent-yellow);
+  --color-accent-lavender: var(--accent-lavender);
+  --color-image-placeholder: var(--image-placeholder);
+  --color-badge-background: var(--badge-background);
+  --color-star: var(--star);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+}
