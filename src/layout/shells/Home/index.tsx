@@ -1,5 +1,6 @@
-import Header from "@/layout/components/Header";
+import GetStarted from "@/features/get-started";
 import Footer from "@/layout/components/Footer";
+import Header from "@/layout/components/Header";
 
 interface HomeShellProps {
   children: React.ReactNode;
@@ -15,6 +16,7 @@ export default function HomeShell({ children }: HomeShellProps) {
       >
         {children}
       </main>
+      <GetStarted />
       <Footer />
     </div>
   );
