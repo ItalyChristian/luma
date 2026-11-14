@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { pictures } from "./pictures.data";
+import { PictureProps, pictures } from "./pictures.data";
 
 export default function PeopleCollage() {
   return (
@@ -13,7 +13,7 @@ export default function PeopleCollage() {
         className="absolute inset-[3%] rounded-full bg-accent-lavender"
       />
       <div className="relative grid h-full grid-cols-4 grid-rows-6 gap-2.5 p-[5%] sm:gap-3">
-        {pictures.map(({ src, position }) => (
+        {pictures.map(({ src, position }: PictureProps) => (
           <div
             key={src}
             className={`relative overflow-hidden rounded-md bg-white shadow-[0_3px_8px_rgba(27,30,43,0.2)] ${position}`}
