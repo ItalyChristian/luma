@@ -1,35 +1,84 @@
 import { LinkButton } from "@/shared/components/LinkButton";
-import IllustrativeShell from "@/shared/components/Section/IllustrativeShell";
 import TextShell from "@/shared/components/Section/TextShell";
+import Image from "next/image";
 
 export default function Highlights() {
   return (
     <section
       id="highlights"
-      aria-labelledby="teachers-and-students-title"
-      className="w-full flex flex-col gap-8 py-12 md:min-h-162.5 md:flex-row md:items-center md:gap-10 md:py-16"
+      aria-labelledby="featured-course-title"
+      className="w-full bg-primary text-white"
     >
-      <IllustrativeShell className="full mx-auto w- md:flex-[0.95]"></IllustrativeShell>
+      <div className="mx-auto grid w-full max-w-258 grid-cols-1 items-center gap-8 px-4 py-12 md:grid-cols-2 md:gap-13 md:py-22">
+        <div className="relative aspect-[1.32] w-full overflow-visible">
+          <div className="absolute -left-2 -top-2 z-10 rounded-md bg-accent-yellow px-3 py-1.5 text-[10px] font-semibold tracking-[1px] text-foreground">
+            FEATURED COURSE
+          </div>
+          <div className="relative h-full w-full overflow-hidden rounded-[14px] bg-image-placeholder">
+            <Image
+              src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?auto=format&fit=crop&w=1400&q=85"
+              alt="Product design work in progress on a studio desk"
+              fill
+              unoptimized
+              sizes="(max-width: 767px) 100vw, 480px"
+              className="object-cover"
+            />
+          </div>
+        </div>
 
-      <div className="w-full flex flex-col items-start md:flex-[1.05]">
-        <TextShell
-          subheading="MOST POPULAR THIS MONTH"
-          title={
-            <h2 className="max-w-110 text-[28px] leading-[1.08] font-bold tracking-[-1.2px] md:text-[42px] md:tracking-[-1.8px]">
-              Designing produtcs people understand.
-            </h2>
-          }
-          description="Learn how to design products that people understand and love. This course will teach you the fundamentals of user experience design, including user research, wireframing, prototyping, and usability testing."
-        />
+        <div>
+          <TextShell
+            subheading="MOST POPULAR THIS MONTH"
+            subheadingClassName="text-white"
+            title={
+              <h2
+                id="featured-course-title"
+                className="max-w-110 text-[32px] leading-[1.05] font-bold tracking-[-1.5px] text-white md:text-[42px] md:tracking-[-1.8px]"
+              >
+                Designing products people understand.
+              </h2>
+            }
+            description="Learn how to turn complex workflows into simple, intentional product experiences through research, structure and thoughtful interaction design."
+            descriptionClassName="max-w-120 text-white/90"
+          />
 
-        <LinkButton
-          href="#people"
-          variant="outline"
-          size="large"
-          className="mt-7 w-fit min-w-57.5 max-w-full text-[12px]"
-        >
-          View course
-        </LinkButton>
+          <p className="mt-6 text-[14px] text-white/90">
+            with Maya Chen · Senior Product Designer
+          </p>
+
+          <ul aria-label="Course details" className="mt-6 flex flex-wrap gap-2">
+            <li className="rounded-lg border border-white/60 px-3 py-2 text-[12px]">
+              8 lessons
+            </li>
+            <li className="rounded-lg border border-white/60 px-3 py-2 text-[12px]">
+              2h 40min
+            </li>
+            <li className="rounded-lg border border-white/60 px-3 py-2 text-[12px]">
+              Intermediate
+            </li>
+          </ul>
+
+          <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:items-center">
+            <LinkButton
+              href="#courses"
+              variant="accent"
+              size="large"
+              className="w-full sm:w-fit"
+            >
+              View course
+            </LinkButton>
+            <LinkButton
+              href="#courses"
+              variant="text"
+              className="justify-center gap-2 text-white hover:text-accent-yellow sm:justify-start"
+            >
+              Browse all courses
+              <span aria-hidden="true" className="text-[18px] leading-none">
+                →
+              </span>
+            </LinkButton>
+          </div>
+        </div>
       </div>
     </section>
   );
