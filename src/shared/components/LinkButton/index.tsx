@@ -1,13 +1,7 @@
 import { cn } from "@/shared/utils/cn";
 import Link from "next/link";
-import type { ComponentProps, ReactNode } from "react";
+import { LinkButtonProps } from "./link-button.types";
 import { sizeVariants, variantClasses } from "./variants";
-
-type LinkButtonProps = Omit<ComponentProps<typeof Link>, "children"> & {
-  children: ReactNode;
-  variant?: "contained" | "outline";
-  size?: "medium" | "large";
-};
 
 export function LinkButton({
   children,
