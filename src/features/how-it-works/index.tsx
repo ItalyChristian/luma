@@ -1,4 +1,5 @@
 import SectionSubheading from "@/shared/components/Section/SectionSubheading";
+import SectionTitle from "@/shared/components/Section/SectionTitle";
 import { StepMarker } from "./step-marker";
 import { StepProps, steps } from "./steps.data";
 
@@ -11,12 +12,11 @@ export default function HowItWorks() {
     >
       <header className="flex flex-col items-center text-center">
         <SectionSubheading text="HOW LUMA WORKS" />
-        <h2
+        <SectionTitle
+          text="Less browsing. More learning."
+          variant="center"
           id="how-it-works-title"
-          className="text-[30px] leading-[1.08] font-bold tracking-[-1.4px] md:text-[42px] md:tracking-[-1.8px]"
-        >
-          Less browsing. More learning.
-        </h2>
+        />
       </header>
 
       <ol className="relative mt-10 grid grid-cols-1 md:mt-20 md:grid-cols-3 md:gap-10 md:before:absolute md:before:left-6 md:before:right-6 md:before:top-6 md:before:h-px md:before:bg-border md:before:content-['']">

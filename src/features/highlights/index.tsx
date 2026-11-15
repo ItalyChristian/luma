@@ -30,14 +30,9 @@ export default function Highlights() {
           <TextShell
             subheading="MOST POPULAR THIS MONTH"
             subheadingClassName="text-white"
-            title={
-              <h2
-                id="featured-course-title"
-                className="max-w-110 text-[32px] leading-[1.05] font-bold tracking-[-1.5px] text-white md:text-[42px] md:tracking-[-1.8px]"
-              >
-                Designing products people understand.
-              </h2>
-            }
+            title="Designing products people understand."
+            titleVariant="left-white"
+            titleId="featured-course-title"
             description="Learn how to turn complex workflows into simple, intentional product experiences through research, structure and thoughtful interaction design."
             descriptionClassName="max-w-120 text-white/90"
           />

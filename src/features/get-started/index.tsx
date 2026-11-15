@@ -1,4 +1,5 @@
 import { LinkButton } from "@/shared/components/LinkButton";
+import SectionTitle from "@/shared/components/Section/SectionTitle";
 import Image from "next/image";
 import GeometricForeground from "./GeometricForeground";
 import { communityFaces } from "./icons.data";
@@ -30,12 +31,12 @@ export default function GetStarted() {
           ))}
         </div>
 
-        <h2
+        <SectionTitle
+          text="What will you learn next?"
+          variant="center-large"
           id="next-learning-title"
-          className="mt-8 text-4xl font-bold tracking-[-0.04em] text-foreground md:text-5xl"
-        >
-          What will you learn next?
-        </h2>
+          className="mt-8"
+        />
         <p className="mt-3 text-base text-muted">
           Start with one course. Build from there.
         </p>

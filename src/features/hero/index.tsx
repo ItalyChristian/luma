@@ -10,11 +10,10 @@ export default function Hero() {
       <div className="order-2 flex w-full flex-col items-start md:order-0 md:w-[52%]">
         <TextShell
           subheading="LEARN AT YOUR OWN PACE"
-          title={
-            <h1 className="max-w-127.5 text-[36px] leading-[1.06] font-bold tracking-[-1.8px] md:text-[58px] md:tracking-[-2.8px]">
-              Build skills that actually move you forward.
-            </h1>
-          }
+          title="Build skills that actually move you forward."
+          titleVariant="left-large"
+          titleAs="h1"
+          titleId="hero-title"
           description="Practical courses taught by people who do the work every day. Learn design, technology, business and more — one focused lesson at a time."
         />
 

@@ -12,14 +12,8 @@ export default function Courses() {
       <div className="mx-auto flex w-full max-w-253 flex-col gap-8 px-4 py-12 md:gap-10 md:py-22">
         <TextShell
           subheading="FIND YOUR NEXT SKILL"
-          title={
-            <h2
-              id="courses-title"
-              className="max-w-110 text-[28px] leading-[1.08] font-bold tracking-[-1.2px] md:text-[42px] md:tracking-[-1.8px]"
-            >
-              Learn something worth knowing.
-            </h2>
-          }
+          title="Learn something worth knowing."
+          titleId="courses-title"
           description="Short, practical courses designed around skills you can put to work immediately."
         />
 
