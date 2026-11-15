@@ -19,11 +19,14 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 
 export const metadata: Metadata = {
   title: "Luma — Learn at your own pace",
-  description:
-    "Practical courses taught by people who do the work every day.",
+  description: "Practical courses taught by people who do the work every day.",
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html
       lang="en"
