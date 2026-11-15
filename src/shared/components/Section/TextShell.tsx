@@ -5,10 +5,14 @@ import type { TextShellContent } from "./shell.types";
 
 interface TextShellProps extends TextShellContent {
   className?: string;
+  subheadingClassName?: string;
+  descriptionClassName?: string;
 }
 
 export default function TextShell({
   className,
+  subheadingClassName,
+  descriptionClassName,
   subheading,
   title,
   description,
@@ -17,9 +21,12 @@ export default function TextShell({
     <div
       className={cn("flex w-full flex-col items-start", className)}
     >
-      <SectionSubheading text={subheading} />
+      <SectionSubheading text={subheading} className={subheadingClassName} />
       {title}
-      <SectionDescription text={description} />
+      <SectionDescription
+        text={description}
+        className={descriptionClassName}
+      />
     </div>
   );
 }
