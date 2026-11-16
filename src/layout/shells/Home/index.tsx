@@ -8,7 +8,7 @@ interface HomeShellProps {
 
 export default function HomeShell({ children }: HomeShellProps) {
   return (
-    <div className="flex min-h-screen flex-col bg-background font-sans text-foreground">
+    <div className="flex min-h-dvh flex-col bg-background font-sans text-foreground">
       <Header />
       <main className="flex w-full flex-1 flex-col">
         {children}
