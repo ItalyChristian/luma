@@ -9,7 +9,7 @@ export default function GetStarted() {
     <section
       id="get-started"
       aria-labelledby="next-learning-title"
-      className="relative isolate overflow-hidden bg-accent-yellow"
+      className="relative isolate overflow-hidden bg-cta-background"
     >
       <GeometricForeground />
       <div className="relative mx-auto flex min-h-102.5 w-full max-w-260.5 flex-col items-center justify-center px-4 py-16 text-center">
@@ -17,7 +17,7 @@ export default function GetStarted() {
           {communityFaces.map((src) => (
             <span
               key={src}
-              className="relative h-9 w-9 overflow-hidden rounded-full border-2 border-accent-yellow bg-white"
+              className="relative h-9 w-9 overflow-hidden rounded-full border-2 border-cta-background bg-white"
             >
               <Image
                 src={`https://images.unsplash.com/${src}?auto=format&fit=crop&w=96&h=96&q=80`}

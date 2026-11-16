@@ -5,7 +5,7 @@ import Navbar from "./Navbar";
 export default function Header() {
   return (
     <header className="relative z-10 border-b border-border bg-background">
-      <div className="mx-auto flex h-15 w-full max-w-252.5 items-center justify-between px-4 md:px-0">
+      <div className="mx-auto flex h-[68px] w-full max-w-[1280px] items-center justify-between px-5 md:h-[70px] md:px-20">
         <Link
           href="/"
           aria-label="Luma home"

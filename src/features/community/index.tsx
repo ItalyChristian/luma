@@ -8,7 +8,7 @@ export default function Community() {
     <section
       id="community"
       aria-labelledby="teachers-and-students-title"
-      className="w-full flex flex-col gap-8 py-12 md:min-h-162.5 md:flex-row md:items-center md:gap-10 md:py-16"
+      className="flex w-full flex-col gap-8 py-12 md:min-h-162.5 md:flex-row md:items-center md:gap-10 md:py-16"
     >
       <div className="w-full flex flex-col items-start md:flex-[1.05]">
         <TextShell
@@ -28,7 +28,7 @@ export default function Community() {
         </LinkButton>
       </div>
 
-      <IllustrativeShell className="full mx-auto w- md:flex-[0.95]">
+      <IllustrativeShell className="mx-auto w-full max-w-130 md:flex-[0.95]">
         <PeopleCollage />
       </IllustrativeShell>
     </section>

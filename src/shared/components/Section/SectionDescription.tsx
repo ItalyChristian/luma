@@ -12,7 +12,7 @@ export default function SectionDescription({
   return (
     <p
       className={cn(
-        "mt-4 max-w-110 text-[15px] leading-[1.65] text-muted md:mt-5 md:text-[16px]",
+        "mt-4 max-w-110 text-[16px] leading-[26px] text-muted md:mt-6 md:text-[18px] md:leading-7",
         className,
       )}
     >
