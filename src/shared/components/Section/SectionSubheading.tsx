@@ -12,7 +12,7 @@ export default function SectionSubheading({
   return (
     <p
       className={cn(
-        "mb-4 text-[11px] font-semibold tracking-[1.4px] text-primary",
+        "mb-4 text-[12px] leading-4 font-semibold tracking-[1.44px] text-primary",
         className,
       )}
     >

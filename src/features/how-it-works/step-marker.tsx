@@ -13,15 +13,15 @@ export function StepMarker({ kind }: { kind: MarkerKind }) {
 
   if (kind === "experience") {
     return (
-      <div className="flex h-12 w-12 rotate-12 items-end justify-end rounded-lg bg-[#ffc99f] p-1.5">
-        <span className="h-6 w-6 rounded-full bg-[#ff7356]" />
+      <div className="flex h-12 w-12 rotate-12 items-end justify-end rounded-lg bg-accent-peach p-1.5">
+        <span className="h-6 w-6 rounded-full bg-accent-orange" />
       </div>
     );
   }
 
   return (
     <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-accent-yellow">
-      <span className="h-4.5 w-4.5 rounded-full bg-[#ead448]" />
+      <span className="h-4.5 w-4.5 rounded-full bg-accent-yellow-dark" />
     </div>
   );
 }

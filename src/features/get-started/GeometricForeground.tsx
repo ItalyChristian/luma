@@ -1,4 +1,4 @@
-export default function GeometricForegrount() {
+export default function GeometricForeground() {
   return (
     <div aria-hidden="true" className="pointer-events-none absolute inset-0">
       <span className="absolute -left-7 top-[48%] h-12 w-12 rotate-12 rounded-md bg-accent-peach md:left-[2%] md:top-[52%]" />

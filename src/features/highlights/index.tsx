@@ -9,7 +9,7 @@ export default function Highlights() {
       aria-labelledby="featured-course-title"
       className="w-full bg-primary text-white"
     >
-      <div className="mx-auto grid w-full max-w-258 grid-cols-1 items-center gap-8 px-4 py-12 md:grid-cols-2 md:gap-13 md:py-22">
+      <div className="mx-auto grid w-full max-w-[1280px] grid-cols-1 items-center gap-8 px-5 py-12 md:grid-cols-2 md:gap-13 md:px-20 md:py-22">
         <div className="relative aspect-[1.32] w-full overflow-visible">
           <div className="absolute -left-2 -top-2 z-10 rounded-md bg-accent-yellow px-3 py-1.5 text-[10px] font-semibold tracking-[1px] text-foreground">
             FEATURED COURSE

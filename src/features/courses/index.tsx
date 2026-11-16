@@ -9,7 +9,7 @@ export default function Courses() {
       aria-labelledby="courses-title"
       className="w-full bg-surface"
     >
-      <div className="mx-auto flex w-full max-w-253 flex-col gap-8 px-4 py-12 md:gap-10 md:py-22">
+      <div className="mx-auto flex w-full max-w-7xl flex-col gap-8 px-5 py-12 md:gap-10 md:px-20 md:py-22">
         <TextShell
           subheading="FIND YOUR NEXT SKILL"
           title="Learn something worth knowing."

@@ -6,8 +6,8 @@ import StudentsCount from "./StudentsCount";
 
 export default function Hero() {
   return (
-    <section className="flex w-full flex-col gap-8 py-12 md:min-h-[calc(100vh-60px)] md:flex-row md:items-center md:gap-10 md:py-16">
-      <div className="order-2 flex w-full flex-col items-start md:order-0 md:w-[52%]">
+    <section className="flex w-full flex-col gap-10 py-[60px] md:min-h-[720px] md:flex-row md:items-center md:gap-[60px] md:py-[100px]">
+      <div className="order-2 flex w-full flex-col items-start md:order-0 md:w-1/2">
         <TextShell
           subheading="LEARN AT YOUR OWN PACE"
           title="Build skills that actually move you forward."
@@ -25,7 +25,6 @@ export default function Hero() {
             href="#about"
             variant="outline"
             size="large"
-            className="hidden sm:flex"
           >
             See how it works
           </LinkButton>
@@ -36,7 +35,7 @@ export default function Hero() {
 
       <IllustrativeShell
         mobileOrder="first"
-        className="mx-auto w-full max-w-110 md:w-[44%] md:max-w-none"
+        className="mx-auto w-full max-w-110 md:w-[44.65%] md:max-w-none"
       >
         <ImageSection />
       </IllustrativeShell>
