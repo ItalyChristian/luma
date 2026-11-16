@@ -1,4 +1,4 @@
-interface MetricProps {
+export interface MetricProps {
   value: string;
   label: string;
 }
