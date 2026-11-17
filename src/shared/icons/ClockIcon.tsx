@@ -1,6 +1,9 @@
 import { IconProps } from "./icon.types";
 
-export function Chat({ size = "1rem", color = "currentColor" }: IconProps) {
+export function ClockIcon({
+  size = "1rem",
+  color = "currentColor",
+}: IconProps) {
   return (
     <svg
       width={size}

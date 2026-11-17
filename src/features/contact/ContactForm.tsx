@@ -85,7 +85,7 @@ export default function ContactForm() {
 
           <button
             type="submit"
-            className="h-12 w-full rounded-lg bg-primary text-[14px] leading-6 font-bold text-white transition-colors hover:bg-primary-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+            className="h-12 w-full rounded-lg bg-primary text-[14px] leading-6 font-bold text-white transition-colors cursor-pointer hover:bg-primary-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
           >
             Send message
           </button>
