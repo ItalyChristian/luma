@@ -16,10 +16,9 @@ export default function Highlights() {
           </div>
           <div className="relative h-full w-full overflow-hidden rounded-[14px] bg-image-placeholder">
             <Image
-              src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?auto=format&fit=crop&w=1400&q=85"
+              src="/images/Highlights/Image (Product design course — student working on interface designs).png"
               alt="Product design work in progress on a studio desk"
               fill
-              unoptimized
               sizes="(max-width: 767px) 100vw, 480px"
               className="object-cover"
             />

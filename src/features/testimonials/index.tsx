@@ -23,10 +23,9 @@ export default function Testimonials() {
           <figcaption className="mt-6 flex items-center gap-4">
             <span className="relative h-12 w-12 overflow-hidden rounded-full bg-image-placeholder">
               <Image
-                src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=96&h=96&q=80"
+                src="/images/Tesmonials/Image (Alex Morgan).png"
                 alt=""
                 fill
-                unoptimized
                 sizes="48px"
                 className="object-cover"
               />

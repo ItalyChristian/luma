@@ -20,10 +20,9 @@ export default function GetStarted() {
               className="relative h-9 w-9 overflow-hidden rounded-full border-2 border-cta-background bg-white"
             >
               <Image
-                src={`https://images.unsplash.com/${src}?auto=format&fit=crop&w=96&h=96&q=80`}
+                src={`/images/GetStarted/${src}`}
                 alt=""
                 fill
-                unoptimized
                 sizes="36px"
                 className="object-cover"
               />

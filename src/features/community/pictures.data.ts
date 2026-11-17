@@ -5,43 +5,43 @@ export interface PictureProps {
 
 export const pictures: PictureProps[] = [
   {
-    src: "photo-1434030216411-0b793f4b4173",
+    src: "Image (2).png",
     position: "col-start-1 row-start-2 row-span-2",
   },
   {
-    src: "photo-1522202176988-66273c2fd55f",
+    src: "Image.png",
     position: "col-start-2 row-start-1 row-span-2",
   },
   {
-    src: "photo-1523240795612-9a054b0db644",
+    src: "Image (1).png",
     position: "col-start-3 row-start-1 row-span-2",
   },
   {
-    src: "photo-1517841905240-472988babdf9",
+    src: "Image (3).png",
     position: "col-start-4 row-start-2 row-span-2",
   },
   {
-    src: "photo-1521737711867-e3b97375f902",
+    src: "Image (5).png",
     position: "col-start-2 row-start-3 row-span-2",
   },
   {
-    src: "photo-1531482615713-2afd69097998",
+    src: "Image (8).png",
     position: "col-start-3 row-start-3 row-span-2",
   },
   {
-    src: "photo-1516321318423-f06f85e504b3",
-    position: "col-start-4 row-start-4",
+    src: "Image (10).png",
+    position: "col-start-4 row-start-4 row-span-2",
   },
   {
-    src: "photo-1498243691581-b145c3f54a5a",
+    src: "Image (4).png",
     position: "col-start-1 row-start-4 row-span-3",
   },
   {
-    src: "photo-1517486808906-6ca8b3f04846",
-    position: "col-start-2 row-start-6",
+    src: "Image (6).png",
+    position: "col-start-2 row-start-5 row-span-2",
   },
   {
-    src: "photo-1529070538774-1843cb3265df",
-    position: "col-start-3 row-start-6",
+    src: "Image (7).png",
+    position: "col-start-3 row-start-5 row-span-2",
   },
 ] as const;

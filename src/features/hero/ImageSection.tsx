@@ -7,11 +7,10 @@ export default function ImageSection() {
       <div className="absolute -bottom-2 -left-7 h-24 w-24 rounded-full bg-accent-lavender" />
       <div className="relative aspect-[0.96] overflow-hidden rounded-[20px] bg-image-placeholder">
         <Image
-          src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1200&q=85"
-          alt="Students collaborating on a course project"
+          src="/images/Hero/Image (Person focused on learning at their laptop).png"
+          alt="Learner working on a course at her laptop"
           fill
-          unoptimized
-          priority
+          preload
           sizes="(max-width: 767px) 100vw, 440px"
           className="object-cover"
         />

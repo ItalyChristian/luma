@@ -1,9 +1,9 @@
 import Image from "next/image";
 
 const studentAvatars = [
-  "photo-1534528741775-53994a69daeb",
-  "photo-1500648767791-00dcc994a43e",
-  "photo-1517841905240-472988babdf9",
+  "Image (13).png",
+  "Image (14).png",
+  "Image (15).png",
 ];
 
 export default function StudentsCount() {
@@ -16,10 +16,9 @@ export default function StudentsCount() {
             className="relative h-7 w-7 overflow-hidden rounded-full border-2 border-background bg-image-placeholder"
           >
             <Image
-              src={`https://images.unsplash.com/${avatar}?auto=format&fit=crop&w=56&h=56&q=80`}
+            src={`/images/Hero/${avatar}`}
               alt=""
               fill
-              unoptimized
               sizes="28px"
               className="object-cover"
             />
