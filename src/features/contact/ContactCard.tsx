@@ -1,4 +1,4 @@
-import { ChatIcon } from "@/shared/icons/Clock";
+import { ChatIcon } from "@/shared/icons/ChatIcon";
 import { ClockIcon } from "@/shared/icons/ClockIcon";
 
 interface ContactCardProps {
