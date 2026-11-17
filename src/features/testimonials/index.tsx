@@ -11,7 +11,7 @@ export default function Testimonials() {
         <figure className="w-full md:max-w-150">
           <span
             aria-hidden="true"
-            className="font-jakarta text-3xl leading-none font-extrabold text-primary"
+            className="block h-6 font-jakarta text-[64px] leading-6 font-extrabold text-primary"
           >
             &ldquo;
           </span>
