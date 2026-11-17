@@ -77,3 +77,17 @@ Approximately 12 hours of implementation work (rough estimate).
 
 - GitHub Copilot in VS Code was used for implementation assistance, including the image and performance updates, the testimonial metrics animation, and this documentation.
 - Copilot also helped convert the pre-existing Header component from Vanilla Extract to Tailwind CSS and assisted with the branch-history correction: a pull request comparison initially failed because `main` and `develop` had unrelated histories. Commit `c12c2c81dc1a13a106b4e50e1ffa370eca97f11a` connected the histories and resolved the `.gitignore` and README conflicts.
+
+## Demo
+
+https://github.com/user-attachments/assets/e2402b10-faf2-4fca-b1b0-77de647bb98f
+
+https://github.com/user-attachments/assets/c8acbf2e-7a5b-4462-8f32-5777504a1c6b
+
+https://github.com/user-attachments/assets/c3b55488-3f9f-477e-b8cc-67400e5406f2
+
+<img width="1753" height="990" alt="Captura de tela 2026-11-17 140006" src="https://github.com/user-attachments/assets/157f180e-42b7-4d19-aca7-4080831b3e06" />
+
+
+
+
