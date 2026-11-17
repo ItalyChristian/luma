@@ -7,6 +7,10 @@ Practical courses taught by people who do the work every day.
 - Node.js 20.9 or later
 - Yarn 1.22.22 is recommended. The project includes `yarn.lock` and declares this Yarn version in `package.json`.
 
+## Deployed version
+
+Available here: https://luma-alpha-blond.vercel.app/
+
 ## Run locally
 
 Clone the repository, open a terminal in the project directory, then install dependencies and start the development server:
