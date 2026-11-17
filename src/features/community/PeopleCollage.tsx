@@ -19,10 +19,9 @@ export default function PeopleCollage() {
             className={`relative overflow-hidden rounded-md bg-white shadow-[0_3px_8px_rgba(27,30,43,0.2)] ${position}`}
           >
             <Image
-              src={`https://images.unsplash.com/${src}?auto=format&fit=crop&w=320&q=80`}
+              src={`/images/Community/${src}`}
               alt=""
               fill
-              unoptimized
               sizes="(max-width: 767px) 22vw, 120px"
               className="object-cover"
             />

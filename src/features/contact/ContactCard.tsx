@@ -23,7 +23,7 @@ export default function ContactCard({ icon, title, detail }: ContactCardProps) {
             {detail}
           </a>
         ) : (
-          <span className="text-[14px] leading-6 text-subtle">{detail}</span>
+          <span className="text-[14px] leading-6 text-muted">{detail}</span>
         )}
       </span>
     </div>
