@@ -13,6 +13,7 @@ export default function ImageSection() {
           preload
           sizes="(max-width: 767px) calc(100vw - 40px), (max-width: 1279px) 44.65vw, 440px"
           className="object-cover"
+          fetchPriority="high"
         />
       </div>
       <div className="absolute -left-4 top-4 flex items-center gap-3 rounded-xl bg-white px-3 py-2.5 text-[12px] shadow-[0_8px_24px_rgba(27,30,43,0.12)] md:-left-5 md:top-4 md:px-4 md:py-3">
