@@ -1,11 +1,6 @@
 import { ChatIcon } from "@/shared/icons/ChatIcon";
 import { ClockIcon } from "@/shared/icons/ClockIcon";
-
-interface ContactCardProps {
-  icon: "email" | "clock";
-  title: string;
-  detail: string;
-}
+import { ContactCardProps } from "./contact-card.types";
 
 export default function ContactCard({ icon, title, detail }: ContactCardProps) {
   return (
@@ -17,6 +12,7 @@ export default function ContactCard({ icon, title, detail }: ContactCardProps) {
           <ClockIcon size="1.25rem" />
         )}
       </span>
+
       <span className="flex flex-col gap-0.5">
         <span className="text-[14px] leading-6">{title}</span>
         {icon === "email" ? (
