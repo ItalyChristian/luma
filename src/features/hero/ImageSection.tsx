@@ -7,11 +7,11 @@ export default function ImageSection() {
       <div className="absolute -bottom-2 -left-7 h-24 w-24 rounded-full bg-accent-lavender" />
       <div className="relative aspect-[0.96] overflow-hidden rounded-[20px] bg-image-placeholder">
         <Image
-          src="/images/Hero/Image (Person focused on learning at their laptop).png"
+          src="/images/Hero/hero-laptop.avif"
           alt="Learner working on a course at her laptop"
           fill
           preload
-          sizes="(max-width: 767px) 100vw, 440px"
+          sizes="(max-width: 767px) calc(100vw - 40px), (max-width: 1279px) 44.65vw, 440px"
           className="object-cover"
         />
       </div>

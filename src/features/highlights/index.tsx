@@ -16,10 +16,10 @@ export default function Highlights() {
           </div>
           <div className="relative h-full w-full overflow-hidden rounded-[14px] bg-image-placeholder">
             <Image
-              src="/images/Highlights/Image (Product design course — student working on interface designs).png"
+              src="/images/Highlights/highlights-product-design.avif"
               alt="Product design work in progress on a studio desk"
               fill
-              sizes="(max-width: 767px) 100vw, 480px"
+              sizes="(max-width: 767px) calc(100vw - 40px), 480px"
               className="object-cover"
             />
           </div>
