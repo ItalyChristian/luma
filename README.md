@@ -59,6 +59,7 @@ The production server also listens on [http://localhost:3000](http://localhost:3
 ## Key decisions
 
 - The project uses the Next.js App Router, React, TypeScript, and Tailwind CSS.
+- The project applies the principles of FDS Architecture, using feature-oriented organization and reusable domain structures for scalability. This is my architectural model; reference: [Feature-Oriented Domain Architecture for Scalable Ecosystems](https://github.com/ItalyChristian/feature-oriented-domain-architecture-for-scalable-ecosystems).
 - Local prototype images are rendered with `next/image` so Next.js can optimize and serve responsive formats.
 - The testimonial metrics count-up animation is triggered when the section enters the viewport and respects the operating system's reduced-motion preference.
 - The prototype did not show or expose the intended animation behavior. The current metrics animation is an interpretation of how it should work, rather than a confirmed motion specification.
@@ -87,7 +88,3 @@ https://github.com/user-attachments/assets/c8acbf2e-7a5b-4462-8f32-5777504a1c6b
 https://github.com/user-attachments/assets/c3b55488-3f9f-477e-b8cc-67400e5406f2
 
 <img width="1753" height="990" alt="Captura de tela 2026-11-17 140006" src="https://github.com/user-attachments/assets/157f180e-42b7-4d19-aca7-4080831b3e06" />
-
-
-
-
