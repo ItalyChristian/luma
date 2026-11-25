@@ -1,6 +1,6 @@
 # Luma
 
-Practical courses taught by people who do the work every day.
+Landing page design project developed as part of a technical challenge. 
 
 ## Requirements
 
